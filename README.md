@@ -1,4 +1,4 @@
-### Bug yang terselesaikan :
+###### Bug yang terselesaikan :
 
 - Tidak bisanya menggunakan Action Bar Activity karena changes for Android Support Library, revision 22.1.0 (April 2015) maka jadinya menggunakan AppCompatActivity, read more http://developer.android.com/tools/support-library/index.html
 
@@ -8,13 +8,26 @@
 
 
 
-Fungsi2 module :
-MainActivity.java = menampilkan daftar hp
+###### berikut screenshot2 dari aplikasi :
+tampilan utama
 
-![alt text](https://i.ibb.co/VHGT11n/image.png)
+![image](https://user-images.githubusercontent.com/18584572/80631525-0dc9d700-8a80-11ea-98c6-1246efd2bdd5.png)
 
 
-- FormHandphone.java = untuk merubah daftar hp
-- DetailHandphone.java = untuk informasi detail hp
-- AsyncInvokeURLTask.java = mengambil json data hp
-- Handphone.java = tempat informasi hp di simpan di class Handphone
+Tampilan ubah produk
+
+![image](https://user-images.githubusercontent.com/18584572/80630636-ba0abe00-8a7e-11ea-881b-037943751b61.png)
+
+
+Tampilan detail
+
+![image](https://user-images.githubusercontent.com/18584572/80630291-305af080-8a7e-11ea-8c8b-976a0eff644b.png)
+
+Tampilan pencarian Tampilan tambah produk
+
+![image](https://user-images.githubusercontent.com/18584572/80631132-7ebcbf00-8a7f-11ea-827b-6a57c0f5a37f.png)
+![image](https://user-images.githubusercontent.com/18584572/80631184-9005cb80-8a7f-11ea-90e5-e81c6ac6b6e2.png)
+
+Tampilan hapus produk
+
+![image](https://user-images.githubusercontent.com/18584572/80631247-aa3fa980-8a7f-11ea-9e10-efa8bcdc77fc.png)

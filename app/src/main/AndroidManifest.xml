@@ -19,5 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".FormHandphone"
+            android:label="@string/title_activity_add_new"></activity>
+        <activity android:name=".DetailHandphone"
+            android:label="@string/title_activity_detail_handphone"></activity>
     </application>
 </manifest>

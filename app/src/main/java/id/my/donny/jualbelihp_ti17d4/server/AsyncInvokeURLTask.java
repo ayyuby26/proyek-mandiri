@@ -12,6 +12,8 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.params.BasicHttpParams;
+import org.apache.http.params.HttpParams;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -20,13 +22,13 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class AsyncInvokeURLTask extends AsyncTask<Void, Void, String> {
-    public String mNoteItWebUrl = "www.smartneasy.com";
+    public String mNoteItWebUrl = "list_phone.php";
     private ArrayList<NameValuePair> mParams;
     private OnPostExecuteListener onPostExecuteListener = null;
     private ProgressDialog dialog;
     public boolean showdialog = false;
     public String message ="Proses Data";
-    public String url_server = "http://192.168.43.241/xphone";
+    public String url_server = "http://192.168.43.241/xphone/";
     public Context applicationContext;
     public static interface OnPostExecuteListener{
         void onPostExecute(String result);

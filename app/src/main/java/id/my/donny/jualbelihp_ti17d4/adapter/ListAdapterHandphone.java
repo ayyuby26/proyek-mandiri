@@ -1,6 +1,7 @@
 package id.my.donny.jualbelihp_ti17d4.adapter;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,18 +24,22 @@ public class ListAdapterHandphone extends BaseAdapter implements Filterable {
         this.list = list;
         this.filterd = this.list;
     }
+
     @Override
     public int getCount(){
         return filterd.size();
     }
+
     @Override
     public Object getItem(int position) {
         return  filterd.get(position);
     }
+
     @Override
     public long getItemId(int position){
         return  position;
     }
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView == null){
@@ -42,11 +47,13 @@ public class ListAdapterHandphone extends BaseAdapter implements Filterable {
             convertView = inflater.inflate(R.layout.list_row,null);
         }
         Handphone hp = filterd.get(position);
-        TextView textNama = (TextView) convertView.findViewById(R.id.text_nama);
+        TextView textNama = (TextView) convertView.findViewById(R.id.text_nama1);
         TextView textHarga = (TextView) convertView.findViewById(R.id.text_harga);
+        textNama.setText(hp.getNama());
         textHarga.setText(hp.getHarga());
         return convertView;
     }
+
     @Override
     public Filter getFilter(){
         HandphoneFilter filter = new HandphoneFilter();
@@ -67,6 +74,7 @@ public class ListAdapterHandphone extends BaseAdapter implements Filterable {
             result.values = filteredData;
             return result;
         }
+
         @Override
         protected void publishResults(CharSequence constraint,FilterResults results) {
             filterd = (List<Handphone>) results.values;

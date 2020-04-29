@@ -5,7 +5,7 @@
     android:layout_margin="5dp">
 
     <TextView
-        android:id="@+id/text_nama"
+        android:id="@+id/text_nama1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -19,8 +19,8 @@
         android:id="@+id/text_harga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@id/text_nama"
-        android:layout_alignBottom="@id/text_nama"
+        android:layout_alignBaseline="@id/text_nama1"
+        android:layout_alignBottom="@id/text_nama1"
         android:layout_alignParentRight="true"
         android:text="harga"
         android:textColor="@android:color/background_dark" />

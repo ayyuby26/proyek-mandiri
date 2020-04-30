@@ -4,7 +4,7 @@
 
 - Coding dari modul ListAdapterHandphone.java ada yang kurang, kurangnya yaitu textNama.setText(hp.getNama());
 
-- karena saya mendebug apk ini dengan os Pie/ api 28 maka ada baris perintah yang perlu ditambahkan di AndroidManifest.xml didalam </application> yaitu <uses-library android:name="org.apache.http.legacy" android:required="false" />, read more https://developer.android.com/about/versions/pie/android-9.0-changes-28?hl=id
+- karena saya mendebug apk ini dengan os Pie/ api 28 maka ada baris perintah yang perlu ditambahkan di AndroidManifest.xml didalam ```</application>``` yaitu ```<uses-library android:name="org.apache.http.legacy" android:required="false" />```, read more https://developer.android.com/about/versions/pie/android-9.0-changes-28?hl=id
 
 
 

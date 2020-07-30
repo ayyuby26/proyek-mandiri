@@ -1,3 +1,4 @@
+### Untuk memenuhi tugas sebagai pengganti Ulangan Tengah Semester 6
 ##### Bug yang terselesaikan :
 
 - Tidak bisanya menggunakan Action Bar Activity karena changes for Android Support Library, revision 22.1.0 (April 2015) maka jadinya menggunakan AppCompatActivity, read more http://developer.android.com/tools/support-library/index.html
